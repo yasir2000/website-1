@@ -1,0 +1,17 @@
+.c-plane{
+	position: relative;
+
+	.is-device & {
+		img {
+			position: absolute;
+			bottom:0;
+		}
+	}
+
+	.is-desktop & {
+
+	  img{
+	    display: none;
+	  }
+  }
+}

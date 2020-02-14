@@ -1,0 +1,17 @@
+.c-training-contact {
+    position: relative;
+    padding-top: 16rem;
+    padding-bottom: 8rem;
+
+    @media (min-width: $from-small) {
+        padding-top: 18rem;
+        padding-bottom: 10rem;
+    }
+
+    a {
+        @include filled-underline-single();
+        overflow: hidden;
+        top: rem(4px);
+        color: $color-ui-orange-dark;
+    }
+}

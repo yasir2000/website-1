@@ -1,0 +1,36 @@
+.c-intro{
+  position: relative;
+  padding-top: var(--spacing-xs);
+  margin-top: -2px;
+  z-index: 4;
+
+  @media (min-width: $from-small) {
+    padding-bottom: calc(var(--spacing) - var(--spacing-xs));
+  }
+  
+  &__inner{
+    @media (min-width: $from-small) {
+      display: flex;
+    }
+  }
+
+  &__text{
+    font-size: 1rem;
+    max-width: 60%;
+    margin-bottom: rem(40px);
+
+    @media (min-width: $from-small) {
+      margin-right: auto;
+      white-space: pre;
+      max-width: 21.5rem;
+    }
+  }
+
+  &__title{
+
+    @media (min-width: $from-small) {
+      white-space: pre;
+      width: 55%;
+    }
+  }
+} 

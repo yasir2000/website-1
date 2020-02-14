@@ -1,0 +1,105 @@
+.o-txt{
+  width: auto;
+  max-width: 25rem;
+
+  > * {
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &--l{
+    max-width: 30rem;
+  }
+}
+
+.o-title{
+  font-family: $font-serif;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.o-h1{
+  @include fluid-type(font-size, 300px, 2000px, 45px, 120px);
+  font-family: $font-serif;
+  line-height: 1;
+  font-weight: 500;
+
+  @media (max-width: $to-mobile) {
+    font-size: 3.5rem;
+  }
+}
+
+.o-h2{
+  @include fluid-type(font-size, 500px, 2000px, 36px, 75px);
+  font-family: $font-serif;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.o-h3{
+  @include fluid-type(font-size, 500px, 2000px, 28px, 52px);
+  font-family: $font-serif;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.o-h4{
+  @include fluid-type(font-size, 500px, 2000px, 24px, 35px);
+  font-family: $font-serif;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.o-h5{
+  @include fluid-type(font-size, 500px, 2000px, 18px, 25px);
+  font-family: $font-serif;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.o-label {
+  font-size: 1rem;
+  font-weight: $bold;
+  color: $color-ui-orange;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $from-small) {
+    margin-bottom: 2rem;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    width: rem(70px);
+    height: 1px;
+    margin-right: rem(20px);
+    background-color: $color-base-black;
+    opacity: 0.1;
+    margin-left: rem(20px);
+  }
+
+  &--no-line {
+    &:before {
+      display: none;
+    }
+  }
+
+  &--orange {
+    color: $color-ui-orange;
+  }
+
+  &--yellow {
+    color: $color-ui-yellow;
+  }
+}
+
+.o-lead{
+  @include fluid-type(font-size, 500px, 2000px, 25px, 40px);
+  font-family: $font-serif;
+  font-weight: 500;
+  line-height: 1.25;
+}

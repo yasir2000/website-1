@@ -1,0 +1,95 @@
+.c-about-hero {
+	position: relative;
+	z-index: 1;
+	background-size: 100% auto;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-image: url('../../static/about/cloud.png');
+	padding-bottom: 8rem;
+	padding-top: 14rem;
+}
+
+.c-about-focus {
+
+	&__title {
+		display: flex;
+		align-items: center;
+		transform-origin: top left;
+		color: $color-ui-orange-dark;
+		font-weight: $bold;
+		margin-bottom: 4rem;
+
+		@media (min-width: $from-large) {
+			padding-left: var(--gutter);
+			padding-right: var(--gutter);
+		}
+
+		&:after {
+			content: '';
+			width: rem(200px);
+			height: 1px;
+			background-color: $color-base-black;
+			opacity: 0.1;
+			margin-left: rem(20px);
+		}
+	}
+
+	&__divider {
+		margin-top: -7rem;
+		@media (min-width: $from-medium) {
+			margin-top: -18rem;
+		}
+	}
+
+
+	&__headline {
+		width: 100%;
+		margin-top: auto;
+		min-height: 7rem;
+	}
+}
+
+.c-about-statement {
+	padding-top: 0;
+	background-color: #f3f7f9;
+
+	@media (min-width: $from-medium) {
+		background-color: transparent;
+		margin-top: -32vw;
+	}
+
+	@media (min-width: $from-large) {
+		margin-top: -37vw;
+	}
+
+	&__title {
+		width: 100%;
+		padding-bottom: calc(var(--spacing) / 2);
+		position: relative;
+
+		@media (min-width: $from-medium) {
+			width: 42%;
+		}
+	}
+
+	&__cloud {
+		position: absolute;
+		bottom:0;
+
+		&--left {
+			width: 63%;
+		}
+
+		&--right {
+			bottom: -1px;
+		}
+	}
+}
+
+.js-stagger-line {
+	overflow: hidden;
+	
+	> div {
+		overflow: hidden;
+	}
+}

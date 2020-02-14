@@ -1,0 +1,19 @@
+.c-pmask{
+  @include fill(fixed);
+  z-index: 9999;
+
+  &--blue{
+    background-color: $color-ui-blue-dark;
+  }
+
+  &--light{
+    background-color: $color-base-white;
+  }
+}
+
+.c-transition-gl{
+  @include fill(fixed);
+	pointer-events: none;
+	will-change: transform;
+  z-index: 9998;
+}

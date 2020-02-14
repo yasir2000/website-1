@@ -1,0 +1,46 @@
+// ==========================================================================
+// Objects / Container
+// ==========================================================================
+.o-row{
+	--max-width-smaller: 58rem;
+	--max-width-small: 70rem;
+	--max-width-medium: 74rem;
+	--max-width: 80rem;
+	--max-width-expanded: 100rem;
+
+	position: relative;
+	max-width: var(--max-width);
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+
+	&--expanded{
+		max-width: var(--max-width-expanded);
+	}
+
+	&--medium {
+		max-width: var(--max-width-medium);
+	}
+
+	&--small {
+		max-width: var(--max-width-small);
+	}
+
+	&--smaller {
+		max-width: var(--max-width-smaller);
+	}
+
+	&-left,
+	&-right{
+		position: relative;
+		max-width: var(--max-width);
+	}
+
+	&-left{
+		margin-right: auto;
+	}
+
+	&-right{
+		margin-left: auto;
+	}
+}

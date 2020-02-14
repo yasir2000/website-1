@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'chap';
+  font-display: swap;
+  src: url('../fonts/Chap-Bold.woff2') format('woff2'), url('../fonts/Chap-Bold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'chap';
+  font-display: swap;
+  src: url('../fonts/Chap-Semibold.woff2') format('woff2'), url('../fonts/Chap-Semibold.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'chap';
+  font-display: swap;
+  src: url('../fonts/Chap-Medium.woff2') format('woff2'), url('../fonts/Chap-Medium.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'chap';
+  font-display: swap;
+  src: url('../fonts/Chap-Regular.woff2') format('woff2'), url('../fonts/Chap-Regular.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'comspot';
+  font-display: swap;
+  src: url('../fonts/Graphik-Regular.woff2') format('woff2'), url('../fonts/Graphik-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'comspot';
+  font-display: swap;
+  src: url('../fonts/Graphik-Medium.woff2') format('woff2'), url('../fonts/Graphik-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'comspot';
+  font-display: swap;
+  src: url('../fonts/Graphik-Semibold.woff2') format('woff2'), url('../fonts/Graphik-Semibold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+ul, ol, li{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+figure{
+  padding: 0;
+  margin: 0;
+}
+
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+video{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4{
+  margin: 0;
+}
+
+p, a, li{
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+p{
+  font-weight: 400;
+}
+
+a{
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+}

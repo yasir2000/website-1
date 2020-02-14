@@ -1,0 +1,39 @@
+.c-training-intro {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+
+    @media (min-width: $from-small) {
+        margin-top: 0;
+     }
+
+    &__bg {
+        width: 100%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        order: 2;
+
+        @media (min-width: $from-tiny) {
+            width: 85%;
+        }
+
+        img{
+            @include fill;
+        }
+    }
+
+    &__txt{
+        position: relative;
+        margin-top: -3rem;
+        z-index: 2;
+
+        @media (min-width: $from-tiny) {
+            margin-top: -6rem;
+        }
+    }
+
+    &__title {
+        margin-bottom: 2rem;
+        overflow: hidden;
+    }
+}

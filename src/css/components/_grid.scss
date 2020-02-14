@@ -1,0 +1,55 @@
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.5rem;
+  width: calc(100% + 1rem);
+
+  &-column{
+    width: 50%;
+    padding-bottom: 3rem;
+    @media (min-width: $from-medium) {
+      padding-bottom: 10rem;
+    }
+  }
+
+  &-item{
+    display: flex;
+    padding: 0.5rem;
+
+    &--1{
+      align-items: end;
+      justify-content: end;
+      padding-top: 20%;
+    }
+
+    &--5{
+      justify-content: end;
+    }
+  }
+
+  &-img{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    &--1{
+      width: 45%;
+      margin-left: auto;
+    }
+
+    &--5{
+      width: 45%;
+      margin-left: auto;
+    }
+
+    img{
+      position: absolute;
+      top: -7.5%;
+      bottom: -7.5%;
+      height: 115%;
+      width: 100%;
+      object-fit: cover;
+      will-change: transform;
+    }
+  }
+}

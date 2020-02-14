@@ -1,0 +1,61 @@
+name: Netlify
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build-deploy:
+    name: Build and deploy the 56k.cloud website
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '11.x'
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v1
+      with:
+        php-version: '7.4'
+    - name: Install the site dependencies
+      run: npm install
+    - name: Build the site static assets
+      run: rm -rf ./dist ; npm run build
+    - name: Start the PHP dev server in the background
+      run: nohup php -S 0.0.0.0:8080 > /dev/null 2>&1 &
+    - name: Crawl the website to get our nice HTML files
+      run: sleep 3 && mkdir output && cd output && wget -k -K -E -r -p -N -F -nH -q http://localhost:8080/
+      continue-on-error: true
+    - name: Get the proper files for the subsections
+      run: |
+        cd output
+        rm -rf about.* && wget -k -K -E -p -N -F -nH -q http://localhost:8080/about.php
+        rm -rf blog.* && wget -k -K -E -p -N -F -nH -q http://localhost:8080/blog.php
+        rm -rf training.* && wget -k -K -E -p -N -F -nH -q http://localhost:8080/training.php
+        rm -rf deploying-static-sites-with-github-actions-and-netlify.* && wget -k -K -E -p -N -F -nH -q http://localhost:8080/deploying-static-sites-with-github-actions-and-netlify.php
+        rm -rf year-2020-at-56-cloud.* && wget -k -K -E -p -N -F -nH -q http://localhost:8080/year-2020-at-56-cloud.php
+    - name: Clean up
+      run: |
+        cd output
+        rm -rf *.orig ; mv about.php.html about.html ; mv blog.php.html blog.html ; mv training.php.html training.html ; mv deploying-static-sites-with-github-actions-and-netlify.php.html deploying-static-sites-with-github-actions-and-netlify.html ; mv year-2020-at-56-cloud.php.html year-2020-at-56-cloud.html
+    - name: Copy the right static files
+      run: |
+        cp -r ./dist/* ./output/dist/
+        cp -r ./static/* ./output/static/
+    - name: Find all artifacts from Wget and clean them up
+      run: cd output && find ./ -type f -exec sed -i 's/http\:\/\/localhost\:8080//g' {} \;
+#    - name: Install Hugo
+#      run: wget -q https://github.com/gohugoio/hugo/releases/download/v0.63.2/hugo_0.63.2_Linux-64bit.deb && sudo dpkg -i hugo_0.63.2_Linux-64bit.deb
+#    - name: Generate the blog with Hugo
+#      run: |
+#        mkdir output/blog-v2
+#        cd blog
+#        hugo -D --destination ../output/blog-v2/
+    - name: Install the Netlify CLI
+      run: npm install netlify-cli -g
+    - name: Deploy the website
+      run: netlify deploy --prod --dir ./output/ --site=f81b7e60-773e-4f08-91d7-1e9c3c885bb1 --auth=d7c94bf9a34bb2b96dc734fecb659b8172957e2fdbb2da8ee1a44da80c51997b --timeout=600 --message "Deployed on $(date)"

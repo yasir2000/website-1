@@ -1,0 +1,74 @@
+.u-txt-center{
+  text-align: center;
+}
+
+// Colors
+.u-color-white{
+  color: $color-base-white;
+}
+
+.u-color-blue-light{
+  color: $color-ui-blue-light;
+}
+
+.u-color-orange-dark{
+  color: $color-ui-orange-dark;
+}
+
+.u-color-orange{
+  color: $color-ui-orange;
+}
+
+.u-color-text{
+  color: $color-ui-text;
+}
+
+.u-color-text-3{
+  color: $color-ui-text-3;
+}
+
+.u-color-yellow {
+  color: $color-ui-yellow;
+}
+
+// Bgs
+.u-bg-white{
+  background-color: $color-base-white;
+}
+
+.u-bg-light-white{
+  background-color: $color-ui-light-white;
+}
+
+.u-bg-dark-blue{
+  background-color: $color-ui-blue-dark;
+}
+
+.u-bg-darker-blue{
+  background-color: $color-ui-blue-darker;
+}
+
+.u-bg-blue-light{
+  background-color: $color-ui-blue-light;
+}
+
+.u-bg-orange-dark{
+  background-color: $color-ui-orange-dark;
+}
+
+.u-bg-orange{
+  background-color: $color-ui-orange;
+}
+
+.u-bg-blue-lighter {
+  background-color: $color-ui-blue-lighter;
+}
+
+.u-bg-yellow {
+  background-color: $color-ui-yellow;
+}
+
+// Misc
+.u-wtc{
+  will-change: transform;
+}

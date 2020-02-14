@@ -1,0 +1,87 @@
+.c-training-included{
+    position: relative;
+
+    &__txt {
+        display: block;
+        width: 100%;
+        margin-bottom: rem(20px);
+
+        p > span {
+            color: $color-ui-orange-dark;
+        }
+
+        @media (min-width: $from-medium) {
+            width: 50%;
+        }
+
+        &--wide {
+
+            @media (min-width: $from-medium) {
+                width: 80%;
+            }
+
+            @media (min-width: $from-large) {
+                width: 60%;
+            } 
+        }
+    }
+
+    &__bg {
+        position: relative;
+        padding-top: 59%;
+        margin-top: -15%;
+
+        @media (min-width: $from-small) {
+            margin-top: -30%;
+         }
+
+        @media (min-width: $from-medium) {
+           margin-top: -47.50%;
+        }
+
+        img{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    }
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: rem(40px) rem(-10px) 0;
+
+        &__item {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 rem(10px);
+
+            &:not(:last-child) {
+                margin-bottom: 1.85rem;
+            }
+        }
+        
+        &__title {
+            width: calc(100% - #{ rem(25px) });
+            padding-left: rem(10px);
+            font-weight: $light;
+        }
+
+        &__check {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: rem(25px);
+            height: rem(25px);
+            border-radius: 50%;
+            background-color: $color-base-white;
+            margin-top: rem(-5px);
+            box-shadow: 0px 10px 20px 0px rgba(18, 26, 72, 0.08);
+
+            img {
+                width: rem(10px);
+            }
+        }
+    }
+}

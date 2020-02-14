@@ -1,0 +1,80 @@
+.c-btn{
+  --size: 3.25rem;
+  --border-radius: calc(var(--size) * 0.2);
+
+  display: inline-block;
+  position: relative;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+
+	.is-training & {
+    background-color: $color-ui-theme-orange;
+	}
+
+	body:not(.is-training) & {
+    background-color: $color-ui-theme-blue;
+	}
+
+
+  &__inner{
+    position: relative;
+    height: var(--size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: rem(2px) rem(13px) 0;
+    border-radius: var(--border-radius);
+    font-size: 0.8rem;
+    font-weight: $bold;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+
+  &__icon {
+    width: rem(12px);
+    margin-left: rem(10px);
+    position: relative;
+    z-index: 1;
+    margin-top: rem(1px);
+
+    svg {
+      width:100%;
+      height:100%;
+    }
+  }
+
+  &__svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: $color-base-white;
+    }
+  }
+
+  &__title {
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__item {
+    display: block;
+    
+    &--last {
+      position: absolute;
+      opacity: 0;
+      z-index: 1;
+    }
+  }
+}

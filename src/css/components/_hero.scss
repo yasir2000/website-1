@@ -1,0 +1,221 @@
+.c-hero{
+  position: relative;
+  background-color: $color-base-white;
+  z-index: 3;
+
+  .is-device & {
+    padding-top: 20rem; 
+  }
+
+  .is-tablet & {
+    padding-top: 10rem;
+  }
+
+  &__bg{
+    position: relative;
+    padding-top: 64%;
+    overflow: hidden;
+
+    img{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  &__img{
+    transform-origin: bottom;
+  }
+
+  &__title{
+    position: absolute;
+    right: 4rem;
+    bottom: calc(25% + 5.5rem);
+    color: $color-ui-blue-dark;
+    line-height: 1;
+    z-index: 2;
+    width: inherit;
+
+    @media (max-width: $to-mobile) {
+      bottom: calc(25% + 4rem);
+    }
+
+    .js-intro-line{
+      position: relative;
+      line-height: 1;
+      white-space: nowrap;
+      overflow: hidden;
+
+      .is-desktop & {
+        margin-top:-10px;
+        display: flex;
+      }
+
+      &:nth-child(2) {
+        left: 12.5%;
+      }
+
+      &:last-child{
+        left: 32%;
+      }
+
+      .is-desktop & {
+        > div {
+          &:last-child {
+            padding-left: 1.5rem;
+          }
+        }
+      }
+    }
+
+    @media (min-width: $from-small) {
+      left: 46%;
+      bottom: calc(35% + 2.5rem);
+    }
+
+    @media (min-width: $from-medium) {
+      left: 50%;
+      bottom: calc(35% + 2.5rem);
+    }
+
+    @media (min-width: $from-large) {
+      left: 50%;
+      bottom: calc(40% + 2.5rem);
+    }
+  }
+}
+
+.c-blog-hero {
+  position: relative;
+  padding-top: rem(200px);
+  z-index: 1;
+
+  &__title {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+    .js-intro-line {
+        line-height: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        display: flex;
+
+        > div {
+          display: flex !important;
+
+          &:last-child {
+            padding-left: 1rem;
+          }
+        }
+    }
+
+    div div > div {
+      overflow: hidden;
+    }
+
+    > .js-intro-line:last-child {
+      padding-left: 25%;
+      white-space: nowrap;
+    }
+  }
+
+  &__img {
+    position: absolute !important;
+    right:0;
+    top:rem(-20px);
+    left:0;
+    padding-top: 80%;
+    pointer-events: none;
+  }
+}
+
+.c-page-hero {
+	position: relative;
+  z-index: 1;
+
+  &__img {
+    position: relative;
+    padding-top: 57%;
+    width: 100%;
+    overflow: hidden;
+    order: 2;
+
+    @media (min-width: $from-medium) {
+      width: 45%;
+      order: 1;
+    }
+
+    img {
+      @include fill();
+      object-fit: cover;
+    }
+  }
+
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__title{
+    width: 100%;
+    max-width: 50rem;
+    margin-bottom: 4.5rem;
+
+  
+    &--about{
+      margin-top: 4.5rem;
+  
+      @media (min-width: $from-small) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__p{
+    max-width: 30rem;
+  }
+
+  &__txt {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin-top: calc(var(--spacing-xxs) * 1);
+    order: 1;
+
+    @media (max-width: $to-medium) {
+      margin-bottom: rem(40px);
+    }
+
+    @media (min-width: $from-medium) {
+      padding-left: 10%;
+      padding-right: 7%;
+      order: 2;
+      width: 55%;
+    }
+  }
+
+  &__art {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 85%;
+    margin-bottom: rem(-40px);
+    z-index: 1;
+  }
+}
+
+.c-intro-txt{
+  display: flex;
+  flex-wrap: wrap;
+
+  p{
+
+      @media (min-width: $from-small) {
+         width: 50%;
+         padding-right: 6rem;
+      }
+  }
+}

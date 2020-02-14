@@ -1,0 +1,141 @@
+.c-cmodal{
+  --radius: 1rem;
+
+  @include fill(fixed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  background-color: rgba($color-base-white, 0.5);
+  backdrop-filter: blur(10px);
+  visibility: hidden;
+  z-index: 2000;
+
+  &__close{
+    --size: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(20% - (var(--size) * 0.5));
+    right: calc(var(--size) * -0.5);
+    border-radius: 50%;
+    height: var(--size);
+    width: var(--size);
+    background-color: $color-ui-blue-dark;
+    z-index: 10;
+    transform: rotate(45deg);
+
+    img{
+      width: 1rem;
+      height: auto;
+    }
+  }
+
+  &__inner{
+    --max-width: 30rem;
+
+    max-width: var(--max-width);
+    width: calc(100% - (var(--gutter) * 2));
+  }
+
+  &__img{
+    position: absolute;
+    top: -4rem;
+    left: 0;
+
+  /*
+    &:before{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 20%;
+      background-color: $color-base-white;
+      border-top-left-radius: var(--radius);
+      border-top-right-radius: var(--radius);
+    }
+    */
+
+    img{
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &__content{
+    --padding: 2.25rem;
+
+    padding: 1rem var(--padding) var(--padding);
+    background-color: $color-base-white;
+    //border-bottom-left-radius: var(--radius);
+    //border-bottom-right-radius: var(--radius);
+    box-shadow: 0px rem(20px) rem(30px) 0px rgba(18, 26, 72, 0.08);
+    border-radius: var(--radius);
+    padding-top: 50%;
+  }
+
+  &__title{
+    font-size: 2.3rem;
+  }
+
+  &__sub-title{
+    font-weight: $medium;
+  }
+}
+
+
+.c-cform{
+  padding-top: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__input{
+    margin-bottom: 0.85rem;
+  }
+
+  &__textarea{
+    margin-bottom: 1.5rem;
+  }
+
+  &__submit{
+
+    &-inner{
+      padding: 0 2.5rem;
+    }
+  }
+}
+
+textarea, input{
+  --padding: 0.75rem 1rem;
+
+  display: block;
+  width: 100%;
+  padding: var(--padding); 
+  border-radius: 0.5rem; 
+  border: 1px solid rgba($color-ui-blue-dark, 0.15);
+  font-family: $font-primary;
+  font-weight: $light;
+  color: $color-ui-blue-dark;
+  outline: 0;
+  transition: border-color .25s ease;
+
+  &:focus,
+  &:active{
+    border-color: $color-ui-blue-dark;
+  }
+}
+
+textarea{
+  min-height: 7rem;
+}
+
+::placeholder{
+  font-family: $font-primary;
+  font-weight: $light;
+  color: $color-ui-blue-dark;
+  text-transform: capitalize;
+}

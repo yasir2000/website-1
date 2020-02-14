@@ -1,0 +1,97 @@
+.c-site-head{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 2.5rem;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+  z-index: 1000;
+
+  @media (min-width: $from-small) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  &__inner{
+    display: flex;
+    align-items: center;
+
+    > * {
+      width: 50%;
+    }
+  }
+
+  &__left{
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo{
+    
+    img{
+      height: 5rem;
+      width: auto;
+    }
+  }
+
+  &__usp{
+    margin-left: 6rem;
+    font-weight: 400;
+    display: none;
+
+    @media (min-width: $from-medium) {
+      display: block;
+    }
+  }
+
+  &__right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__contact {
+    display: none;
+
+    @media (min-width: $from-medium) {
+      display: flex;
+    }
+  }
+
+  &__toggle {
+    display: flex;
+    margin-left: auto;
+
+    @media (min-width: $from-medium) {
+      display: none;
+    }
+  }
+
+  &__menu{
+    display: none;
+    @media (min-width: $from-medium) {
+      display: flex;
+    }
+
+    li{
+
+      &:not(:last-child) {
+        margin-right: 5rem;
+      }
+
+      a {
+        padding-bottom: rem(3px);
+        @include underline-single();
+        font-size: rem(12px);
+      }
+
+      .is-active {
+        &:after {
+          transform-origin: left;
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+}
