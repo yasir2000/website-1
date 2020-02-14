@@ -58,4 +58,4 @@ jobs:
     - name: Install the Netlify CLI
       run: npm install netlify-cli -g
     - name: Deploy the website
-      run: netlify deploy --prod --dir ./output/ --site=f81b7e60-773e-4f08-91d7-1e9c3c885bb1 --auth=d7c94bf9a34bb2b96dc734fecb659b8172957e2fdbb2da8ee1a44da80c51997b --timeout=600 --message "Deployed on $(date)"
+      run: netlify deploy --prod --dir ./output/ --site=<site_id> --auth=<site_key> --timeout=600 --message "Deployed on $(date)"
