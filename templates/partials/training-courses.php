@@ -1,5 +1,5 @@
 <div class="c-training-courses u-bg-darker-blue | js-smooth-section">
-    
+
     <div class="c-training-courses__sidebar">
         <div class="c-training-courses__intro">
             <div class="c-training-courses__intro-right">
@@ -20,7 +20,7 @@
                         <h3 class="o-h3">Kubernetes Training</h3>
                         <ul class="u-color-text">
                             <li>Kubernetes Overview (Architecture and concepts)</li>
-                            <li>Install Minikube</li>
+                            <li>Install a Local Development Environment</li>
                             <li>Kubectl CLI overview</li>
                             <li>Kubernetes Pods</li>
                             <li>Deployment (Scaling, labeling, health checks)</li>
@@ -55,12 +55,13 @@
                         <div class="c-training-courses-list__icon">
                             <img src="/static/training/icons/cloud.svg" alt="Cloud">
                         </div>
-                        <h3 class="o-h3">Free Cloud Native Introduction</h3>
+                        <h3 class="o-h3">Cloud Native Introduction</h3>
                         <ul class="u-color-text">
                             <li>Cloud Native Overview</li>
-                            <li>Architecture Concepts</li>
-                            <li>Landscape</li>
-                            <li>Best Practices</li>
+                            <li>Modern application Concepts</li>
+                            <li>CNCF Landscape</li>
+                            <li>Native tooling in the cloud</li>
+                            <li>Your Cloud Native Journey</li>
                         </ul>
                     </div>
                 </div>
@@ -71,9 +72,10 @@
                         </div>
                         <h3 class="o-h3">DevOps Training</h3>
                         <ul class="u-color-text">
-                            <li>Cloud Native Overview</li>
-                            <li>Architecture Concepts</li>
-                            <li>Landscape</li>
+                            <li>Cloud Native Tooling</li>
+                            <li>CI/CD Pipelines</li>
+                            <li>Infrastructure Automation</li>
+                            <li>Cloud Platform Services</li>
                             <li>Best Practices</li>
                         </ul>
                     </div>

@@ -16,7 +16,7 @@
 			<a href="/about" class="js-site-link <?php echo $current_page == 'about.php' ? 'is-active' : NULL ?>">About</a>
 		  </li>
 		  <li>
-			<a href="/blog" class="js-site-link <?php echo $current_page == 'blog.php' ? 'is-active' : NULL ?>">Blog</a>
+			<a href="https://blog.56k.cloud/" class="js-site-link">Blog</a>
 		  </li>
 		  <li>
 			<a href="#0" class="js-open-cmodal" data-router-disabled>Contact us</a>
@@ -34,23 +34,13 @@
 	  	<div class="c-site-foot__social">
 			<ul>
 			  <li>
-			  	<a href="">
+			  	<a href="https://twitter.com/56kcloud">
 			  		<img src="/static/footer/twitter.svg">
 			  	</a>
 			  </li>
 			  <li>
-			  	<a href="">
-			  		<img src="/static/footer/facebook.svg">
-			  	</a>
-			  </li>
-			  <li>
-			  	<a href="">
+			  	<a href="https://www.linkedin.com/company/56kcloud">
 			  		<img src="/static/footer/In.svg">
-			  	</a>
-			  </li>
-			  <li>
-			  	<a href="">
-			  		<img src="/static/footer/instagram.svg">
 			  	</a>
 			  </li>
 			</ul>

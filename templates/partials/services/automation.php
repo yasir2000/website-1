@@ -3,7 +3,7 @@
     data-from='{"y": "0"}'
     data-to='{"y": "200"}'>
     <div class="c-item__intro-right">
-      <span>Features</span>
+      <span>Services</span>
       <span class="c-item__intro-arrow"></span>
     </div>
   </div>

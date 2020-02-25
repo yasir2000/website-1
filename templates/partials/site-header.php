@@ -4,7 +4,6 @@
       <a href="/" class="c-site-head__logo js-site-link">
         <img src="/static/logo.svg" alt="56k">
       </a>
-      <p class="c-site-head__usp">The platform for cloud computing</p>
     </div>
     <nav class="c-site-head__right">
       <ul class="c-site-head__menu">
@@ -15,7 +14,7 @@
           <a href="/about" class="js-site-link <?php echo $current_page == 'about.php' ? 'is-active' : NULL ?>">About</a>
         </li>
         <li>
-          <a href="/blog" class="js-site-link <?php echo $current_page == 'blog.php' ? 'is-active' : NULL ?>">Blog</a>
+          <a href="https://blog.56k.cloud/" target="_blank" class="js-site-link">Blog</a>
         </li>
       </ul>
       <button type="button" class="c-site-head__contact | js-open-cmodal">
@@ -92,7 +91,7 @@
         <a href="/about" class="c-site-nav__link | js-site-nav__link <?php echo $current_page == 'about.php' ? 'is-active' : NULL ?>">About</a>
       </li>
       <li>
-        <a href="/blog" class="c-site-nav__link | js-site-nav__link <?php echo $current_page == 'blog.php' ? 'is-active' : NULL ?>">Blog</a>
+        <a href="https://blog.56k.cloud/" class="c-site-nav__link | js-site-nav__link">Blog</a>
       </li>
     </ul>
     <button class="c-site-nav__contact | js-site-nav__contact js-open-cmodal">

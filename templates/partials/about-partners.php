@@ -1,6 +1,6 @@
 <div class="c-partners o-gutter js-partners | js-smooth-section">
 	<div class="o-row">
-	
+
 		<div class="c-team | js-partner">
 			<div class="c-partner" data-scroll="stagger">
 				<article class="c-partner__item | js-partner__item js-stagger">
@@ -23,16 +23,16 @@
 				</article>
 				<article class="c-partner__item | js-partner__item js-stagger">
 					<div class="c-partner__item-inner">
-						<p class="c-partner__item-title | js-partner__item-title" data-title="Site Reliability Engineer">Site Reliability Engineer</p>
+						<p class="c-partner__item-title | js-partner__item-title" data-title="Site Reliability Engineer & Co-Founder">Site Reliability Engineer & Co-Founder</p>
 
 						<div class="c-partner__item-image">
-							<img class="c-partner__item-img | js-partner__item-img" src="/static/about/dan.jpg" alt="Dan Achim">
+							<img class="c-partner__item-img | js-partner__item-img" src="/static/about/people.jpg" alt="Darragh Grealish">
 						</div>
 
 						<div class="c-partner__item-description | js-partner__item-description"
-							data-description="A native of Bucharest, Romania, Dan's experience is tightly coupled with Linux and the Open Source world and ranges from designing, deploying and automating bare-metal infrastructures to architecting cloud-based ones. He spent a large part of his career putting his skills to use for high traffic websites like Booking.com. Entrepreneurial spirit, he has been involved in several startups, some of his own, and loves helping them get off the ground quickly and dealing with their growing pains."></div>
+							data-description="Darragh has a background in embedded system engineering originally, hacking on networks since thick-ethernet existed and feels back at home with enabling cloud technologies to interface with embedded IoT devices. With over fifteen years of experience in IP networks and System Engineering, working for Akamai, Swisscom, Siemens, and other technology companies. Now, as Co-Founder of 56K.Cloud, Darragh’s focus is on enabling DevOps in small and large organizations to adopt containers in both Software development and Operations. Darragh tweets @grealish"></div>
 
-						<h2 class="o-h5 c-partner__item-name | js-partner__item-name" data-name="Dan Achim">Dan<br>Achim</h2>
+						<h2 class="o-h5 c-partner__item-name | js-partner__item-name" data-name="Darragh Grealish">Darragh<br>Grealish</h2>
 
 						<div class="c-partner__item-plus">
 							<img src="/static/icons/plus.svg">
@@ -44,13 +44,13 @@
 						<p class="c-partner__item-title | js-partner__item-title" data-title="Site Reliability Engineer">Site Reliability Engineer</p>
 
 						<div class="c-partner__item-image">
-							<img class="c-partner__item-img | js-partner__item-img" src="/static/about/marcel.jpg" alt="Marcel de Lange">
+							<img class="c-partner__item-img | js-partner__item-img" src="/static/about/dan.jpg" alt="Dan Achim">
 						</div>
 
 						<div class="c-partner__item-description | js-partner__item-description"
-							data-description="Marcel is a South Africa national currently residing in the United States. This opportunity to travel and work allowed for a lot of professional growth and gave him exposure to working in a truly international environment. Through his travels, he's been involved with businesses ranging from finance to gaming. During this time, his focus was on managing highly available infrastructures, applications, and cloud integrations. He's an experienced certified cloud architect who is customer-focused and passionate about assisting customers with their cloud strategies and reaching their cloud goals. When clouds have been formed and the laptops have been powered off, Marcel enjoys family time, the outdoors and binge-watching Netflix."></div>
+							data-description="A native of Bucharest, Romania, Dan's experience is tightly coupled with Linux and the Open Source world and ranges from designing, deploying and automating bare-metal infrastructures to architecting cloud-based ones. He spent a large part of his career putting his skills to use for high traffic websites like Booking.com. Entrepreneurial spirit, he has been involved in several startups, some of his own, and loves helping them get off the ground quickly and dealing with their growing pains."></div>
 
-						<h2 class="o-h5 c-partner__item-name | js-partner__item-name" data-name="Marcel de Lange">Marcel<br>de Lange</h2>
+						<h2 class="o-h5 c-partner__item-name | js-partner__item-name" data-name="Dan Achim">Dan<br>Achim</h2>
 
 						<div class="c-partner__item-plus">
 							<img src="/static/icons/plus.svg">
@@ -89,6 +89,24 @@
 						<p class="c-partner__item-title | js-partner__item-title" data-title="Site Reliability Engineer">Site Reliability Engineer</p>
 
 						<div class="c-partner__item-image">
+							<img class="c-partner__item-img | js-partner__item-img" src="/static/about/marcel.jpg" alt="Marcel de Lange">
+						</div>
+
+						<div class="c-partner__item-description | js-partner__item-description"
+							data-description="Marcel is a South Africa national currently residing in the United States. This opportunity to travel and work allowed for a lot of professional growth and gave him exposure to working in a truly international environment. Through his travels, he's been involved with businesses ranging from finance to gaming. During this time, his focus was on managing highly available infrastructures, applications, and cloud integrations. He's an experienced certified cloud architect who is customer-focused and passionate about assisting customers with their cloud strategies and reaching their cloud goals. When clouds have been formed and the laptops have been powered off, Marcel enjoys family time, the outdoors and binge-watching Netflix."></div>
+
+						<h2 class="o-h5 c-partner__item-name | js-partner__item-name" data-name="Marcel de Lange">Marcel<br>de Lange</h2>
+
+						<div class="c-partner__item-plus">
+							<img src="/static/icons/plus.svg">
+						</div>
+					</div>
+				</article>
+				<article class="c-partner__item | js-partner__item js-stagger">
+					<div class="c-partner__item-inner">
+						<p class="c-partner__item-title | js-partner__item-title" data-title="Site Reliability Engineer">Site Reliability Engineer</p>
+
+						<div class="c-partner__item-image">
 							<img class="c-partner__item-img | js-partner__item-img" src="/static/about/jochen.png" alt="Jochen Zehnder">
 						</div>
 
@@ -102,28 +120,10 @@
 						</div>
 					</div>
 				</article>
-				<article class="c-partner__item | js-partner__item js-stagger">
-					<div class="c-partner__item-inner">
-						<p class="c-partner__item-title | js-partner__item-title" data-title="Site Reliability Engineer & Co-Founder">Site Reliability Engineer & Co-Founder</p>
-
-						<div class="c-partner__item-image">
-							<img class="c-partner__item-img | js-partner__item-img" src="/static/about/people.jpg" alt="Darragh Grealish">
-						</div>
-
-						<div class="c-partner__item-description | js-partner__item-description"
-							data-description="Darragh has a background in embedded system engineering originally, hacking on networks since thick-ethernet existed and feels back at home with enabling cloud technologies to interface with embedded IoT devices. With over fifteen years of experience in IP networks and System Engineering, working for Akamai, Swisscom, Siemens, and other technology companies. Now, as Co-Founder of 56K.Cloud, Darragh’s focus is on enabling DevOps in small and large organizations to adopt containers in both Software development and Operations. Darragh tweets @grealish"></div>
-
-						<h2 class="o-h5 c-partner__item-name | js-partner__item-name" data-name="Darragh Grealish">Darragh<br>Grealish</h2>
-
-						<div class="c-partner__item-plus">
-							<img src="/static/icons/plus.svg">
-						</div>
-					</div>
-				</article>
 				<article class="c-partner__item | js-stagger">
 					<div class="c-partner__item-contact">
-						<h2 class="o-h3">Have a<br>Question?</h2>
-						<p>In case you haven’t found the answer to your question, please feel free to <a href="#0" class="js-open-cmodal" data-router-disabled>contact us</a>, our customer support will be happy to help you.</p>
+						<h2 class="o-h3">Part of the<br>Team?</h2>
+						<p>Do you share the same vision and values? We'd love to hear from you.<a href="#0" class="js-open-cmodal" data-router-disabled>Contact us</a>, we'd be happy to share a coffee/drink together.</p>
 					</div>
 				</article>
 			</div>

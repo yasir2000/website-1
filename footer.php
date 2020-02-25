@@ -46,5 +46,7 @@
 		<?php echo file_get_contents('dist/app.bundle.svg' ); ?>
 		<script src="<?php echo $theme->get_asset_path('vendor.js'); ?>"></script>
 		<script src="<?php echo $theme->get_asset_path('app.js'); ?>"></script>
+        <script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
+        <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
 	</body>
 </html>

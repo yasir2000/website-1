@@ -21,7 +21,6 @@
 
     @media (min-width: $from-small) {
       margin-right: auto;
-      white-space: pre;
       max-width: 21.5rem;
     }
   }
@@ -29,7 +28,6 @@
   &__title{
 
     @media (min-width: $from-small) {
-      white-space: pre;
       width: 55%;
     }
   }

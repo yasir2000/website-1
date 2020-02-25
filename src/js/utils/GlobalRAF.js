@@ -115,7 +115,7 @@ class GlobalRAF {
     }
     EventBus.on(GlobalResizeEvents.RESIZE, this.onResize)
 
-    listener(window, 'a', 'keydown', (e) => {
+    listener(window, 'a', 'keyup', (e) => {
       if (e.keyCode === 34) {
         this.state.target = store.scrollBounding
       } else if (e.keyCode === 33) {

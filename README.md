@@ -1,6 +1,4 @@
-# 56K G2 Website
-
-bla bla
+# 56K V2 Website
 
 ## How to build
 
@@ -10,3 +8,4 @@ to build:  ```npm run-script build```
 to run for development  ```npm run-script dev```  run in another terminal php -S localhost:5656
 to clean up dist/* dir  ```npm run-script clean```
 
+Test

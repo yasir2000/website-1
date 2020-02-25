@@ -11,7 +11,7 @@
 
 							<div class="c-single__headline-author">
 								<figure class="c-single__headline-img">
-									<img src="/static/blog/author.png">
+									<img src="/static/about/dan.jpg">
 								</figure>
 								<p class="c-single__headline-name">Dan Achim</p>
 								<p class="c-single__headline-date">February 2020</p>
